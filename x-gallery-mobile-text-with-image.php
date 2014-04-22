@@ -35,12 +35,12 @@ $list = g::posts( array(
 			?>
 			<td width='59'>
 				<div class='image_wrapper'>
-					<a href="<?=$list[$i]['href']?>"><img src='<?=$img?>'/></a>
+					<a href="<?=$list[$i]['url']?>"><img src='<?=$img?>'/></a>
 				</div>
 			</td>			       
             <td>
-				<div class='subject'><a href='<?=$list[$i]['href']?>'><?=cut_str(strip_tags($list[$i]['wr_subject']), 30, '...')?></div>
-				<div class='contents_wrapper'><a href='<?=$list[$i]['href']?>'><?=cut_str(strip_tags($list[$i]['wr_content']), 35, '...')?></a></div>			
+				<div class='subject'><a href='<?=$list[$i]['url']?>'><?=cut_str(strip_tags($list[$i]['wr_subject']), 30, '...')?></div>
+				<div class='contents_wrapper'><a href='<?=$list[$i]['url']?>'><?=cut_str(strip_tags($list[$i]['wr_content']), 35, '...')?></a></div>			
 			</td>
 				
              
