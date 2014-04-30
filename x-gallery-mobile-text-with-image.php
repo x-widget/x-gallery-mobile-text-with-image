@@ -31,7 +31,7 @@ $list = g::posts( array(
 			//if ( !$imgsrc ) $img = $latest_skin_url.'/img/no-image.png';
 			//else $img = $imgsrc['src'];
 			if( $imgsrc ) $img = $imgsrc['src'];
-			else $img = x::url().'/widget/'.$widget_config['name'].'/img/no-image.png';						
+			else $img = $widget_config['url'].'/img/no-image.png';						
 			?>
 			<td width='59'>
 				<div class='image_wrapper'>
@@ -47,7 +47,7 @@ $list = g::posts( array(
 	</tr>	
     <?php }  ?>
     <?php if(count($list) == 0) { //게시물이 없을 때  
-			$img = $latest_skin_url.'/img/no-image.png';
+			$img = $widget_config['url'].'/img/no-image.png';
 			for ( $i=0; $i < 4; $i++ ) {?>
 			<tr valign='top'>
 				<td width='59'>
